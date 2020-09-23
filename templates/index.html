@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Preprocessing Pipeline</title>
+</head>
+<body>
+<h1 align="center">This is Text Preprocessing Pipeline</h1>
+<form action="/preprocess" method="post">
+    <h3 align="center">Enter Text here:</h3>
+    <p align="center"><textarea id="text" name="text" rows="12" cols="100">
+    </textarea></p>
+    <p align="center">
+            <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+            <label for="lowercase"> Lowercase</label>
+            <input type="checkbox" id="punct" name="punct" value="punct">
+            <label for="punct"> Remove Punctuation</label>
+            <input type="checkbox" id="stp" name="stp" value="stp">
+            <label for="stp"> Remove Stopwords</label><br><br>
+            <input type="radio" id="stem" name="stem" value="stem">
+            <label for="stem"> Stem</label>
+            <input type="radio" id="lem" name="stem" value="lem">
+            <label for="lem"> Lemmatize</label>
+            <input type="radio" id="none" name="stem" value="none">
+            <label for="none"> None</label><br><br>
+        <input type="submit" value="Preprocess">
+    </p>
+</form>
+</body>
+</html>
